@@ -1,4 +1,4 @@
-# snap-clima
+# Snap Clima
 
 Uma aplicação de busca das informações, em tempo real, sobre o clima local.
 
