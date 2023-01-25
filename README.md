@@ -8,3 +8,7 @@ Uma aplicação de busca das informações, em tempo real, sobre o clima local.
 - CSS
 - Javascript
 - API
+
+### Status do Projeto
+
+Em andamento...
