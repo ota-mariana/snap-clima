@@ -4,7 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
-  
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
   <header class="header-info">
     <div class="search-container">
       <input type="text" name="input-search" id="input-search" placeholder="Digite a localização">
-      <button class="btn-search">Search</button>
+      <button class="btn-search">search</i></button>
     </div>
 
     <div class="current-date">
@@ -29,50 +29,54 @@
     </div>
   </header>
 
-  <section>
-    <img src="" alt="Imagem representando o clima local">
-    <div>
+  <section class="current-weather-info">
+    <img class="current-weather-icon" src="" alt="Imagem representando o clima local">
+    <div class="current-weather-status">
       chuva
     </div>
 
-    <div>
+    <div class="current-temperature-info">
       tempo agora
     </div>
 
-    <div>
+    <div class="current-temperature">
       graus
     </div>
   </section>
 
-  <div>
-    <section>
-      <div>
-        <h5>Vento</h5>
-        <div>...</div>
+  <div class="bottom-container">
+    <section class="temperature-details">
+      <div class="temperature-details-item">
+        <h5 class="details-item-title">Vento</h5>
+        <div class="details-item-info">...</div>
       </div>
 
-      <div>
-        <h5>Umidade</h5>
-        <div>...</div>
+      <div class="temperature-details-item">
+        <h5 class="details-item-title">Umidade</h5>
+        <div class="details-item-info">...</div>
       </div>
 
-      <div>
-        <h5>Sensação</h5>
-        <div>...</div>
+      <div class="temperature-details-item">
+        <h5 class="details-item-title">Sensação</h5>
+        <div class="details-item-info">...</div>
       </div>
     </section>
 
-    <section>
-      <div>
-        <img src="" alt="Nascer do sol">
-        <div>...</div>
+    <section class="sunset-sunrise">
+      <div class="sunrise-item">
+        <!-- <img class="sunrise-icon" src="" alt="Nascer do sol"> -->
+        <i class="fa-light fa-sunrise"></i>
+        <div class="sunrise-info">...</div>
       </div>
 
-      <div>
-        <img src="" alt="Pôr do sol">
-        <div>...</div>
+      <div class="sunset-item">
+        <!-- <img class="sunset-icon" src="" alt="Pôr do sol"> -->
+        <i class="fa-light fa-sunset"></i>
+        <div class="sunset-info">...</div>
       </div>
     </section>
   </div>
+
+  <!-- <script src="https://kit.fontawesome.com/0600a3cf6a.js" crossorigin="anonymous"></script> -->
 </body>
 </html>

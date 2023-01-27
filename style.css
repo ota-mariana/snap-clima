@@ -11,6 +11,17 @@ body {
 }
 
 .header-info {
-  background: blue;
-  
+  background: red;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search-container {
+  /* display: flex; */
+}
+
+.btn-search {
+  border-radius: 100%;
 }
