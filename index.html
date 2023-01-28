@@ -4,10 +4,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/phosphor-icons"></script>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link rel="stylesheet" href="style.css">
 
   <title>Snap Clima</title>
@@ -17,30 +20,37 @@
   <header class="header-info">
     <div class="search-container">
       <input type="text" name="input-search" id="input-search" placeholder="Digite a localização">
-      <button class="btn-search">search</i></button>
+      <button class="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </button>
     </div>
 
     <div class="current-date">
-      date
+      Hoje, 17 janeiro 2023
     </div>
 
-    <div>
-      Local
+    <div class="current-local">
+      Mogi das Cruzes
     </div>
   </header>
 
   <section class="current-weather-info">
-    <img class="current-weather-icon" src="" alt="Imagem representando o clima local">
+    <svg class="current-weather-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16" alt="Imagem representando o clima local">
+      <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+      <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+    </svg>
     <div class="current-weather-status">
-      chuva
+      Nublado
     </div>
 
     <div class="current-temperature-info">
-      tempo agora
+      Tempo agora
     </div>
 
     <div class="current-temperature">
-      graus
+      21C
     </div>
   </section>
 
@@ -48,7 +58,7 @@
     <section class="temperature-details">
       <div class="temperature-details-item">
         <h5 class="details-item-title">Vento</h5>
-        <div class="details-item-info">...</div>
+        <div class="details-item-info">25</div>
       </div>
 
       <div class="temperature-details-item">
@@ -63,20 +73,21 @@
     </section>
 
     <section class="sunset-sunrise">
-      <div class="sunrise-item">
-        <!-- <img class="sunrise-icon" src="" alt="Nascer do sol"> -->
-        <i class="fa-light fa-sunrise"></i>
-        <div class="sunrise-info">...</div>
+      <div class="sunrise-sunset-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-sunrise-fill" viewBox="0 0 16 16">
+          <path d="M7.646 1.146a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708L8.5 2.707V4.5a.5.5 0 0 1-1 0V2.707l-.646.647a.5.5 0 1 1-.708-.708l1.5-1.5zM2.343 4.343a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM11.709 11.5a4 4 0 1 0-7.418 0H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+        <div class="sunrise-sunset-info">5:30</div>
       </div>
 
-      <div class="sunset-item">
-        <!-- <img class="sunset-icon" src="" alt="Pôr do sol"> -->
-        <i class="fa-light fa-sunset"></i>
-        <div class="sunset-info">...</div>
+      <div class="sunrise-sunset-item">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-sunset-fill" viewBox="0 0 16 16">
+          <path d="M7.646 4.854a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V1.5a.5.5 0 0 0-1 0v1.793l-.646-.647a.5.5 0 1 0-.708.708l1.5 1.5zm-5.303-.51a.5.5 0 0 1 .707 0l1.414 1.413a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .706l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM11.709 11.5a4 4 0 1 0-7.418 0H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+        <div class="sunrise-sunset-info">18:00</div>
       </div>
     </section>
   </div>
 
-  <!-- <script src="https://kit.fontawesome.com/0600a3cf6a.js" crossorigin="anonymous"></script> -->
 </body>
 </html>

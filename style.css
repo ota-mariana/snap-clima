@@ -5,23 +5,150 @@
 }
 
 body {
-  background: #f3f4fb;
+  background: #f2f6fd;
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+.header-info, .temperature-details, .sunset-sunrise, .current-weather-info {
+  max-width: 600px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+/* HEADER STYLE */
 
 .header-info {
-  background: red;
   padding: 0 30px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
 }
 
 .search-container {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .btn-search {
   border-radius: 100%;
+  cursor: pointer;
+  min-height: 50px;
+  min-width: 50px;
+  background: black;
+  color: white;
+  transition: 0.2s;
+  box-shadow:
+  rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.btn-search:hover {
+  filter: brightness(2);
+}
+
+#input-search {
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 15px;
+  margin-right: -20px;
+  appearance: none;
+}
+
+.current-date, .current-local {
+  font-family: "Quicksand", sans-serif;
+} 
+
+.current-date {
+  color: rgb(43, 43, 43);
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.current-local {
+  font-size: 20px;
+  color: rgb(48, 48, 48);
+  margin-top: 4px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+/* BODY STYLE */
+
+.current-weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.current-weather-status {
+  color: #7fa7fd;
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 25px;
+}
+
+.current-temperature-info {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.current-temperature {
+  color: black;
+  font-size: 25px;
+  font-weight: 550;
+  margin-top: 3px;
+}
+
+/* BOTTOM STYLE */
+
+.bottom-container {
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-shadow:
+  rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.temperature-details, .sunset-sunrise {
+  display: flex;
+  margin: 30px auto;
+}
+
+.temperature-details-item, .sunrise-sunset-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-right: solid 1px rgb(146, 146, 146);
+}
+
+.temperature-details-item:last-child, .sunrise-sunset-item {
+  border: none;
+}
+
+.details-item-title {
+  font-size: 16px;
+  color: rgb(56, 56, 56);
+  font-weight: 500;
+}
+
+.details-item-info, .sunrise-sunset-info {
+  font-size: 17px;
+  font-weight: 501;
+  margin-top: 7px;
+}
+
+.sunrise-sunset-item {
+  margin-bottom: 30px;
+}
+
+
+
+
