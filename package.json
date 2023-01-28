@@ -1,0 +1,23 @@
+{
+  "name": "snap-clima",
+  "version": "1.0.0",
+  "description": "Uma aplicação de busca das informações, em tempo real, sobre o clima local. O projeto foi desenvolvido com base no conceito de Mobile First garantindo responsividade ao utilizá-la tanto em dispositivos móveis quanto no computador.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ota-mariana/snap-clima.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ota-mariana/snap-clima/issues"
+  },
+  "homepage": "https://github.com/ota-mariana/snap-clima#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.3"
+  }
+}
