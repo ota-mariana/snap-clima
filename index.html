@@ -8,9 +8,8 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link rel="stylesheet" href="style.css">
 
   <title>Snap Clima</title>
@@ -28,11 +27,11 @@
     </div>
 
     <div class="current-date">
-      Hoje, 17 janeiro 2023
+      ...
     </div>
 
     <div class="current-local">
-      Mogi das Cruzes
+      ...
     </div>
   </header>
 
@@ -42,7 +41,7 @@
       <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
     </svg>
     <div class="current-weather-status">
-      Nublado
+      ...
     </div>
 
     <div class="current-temperature-info">
@@ -50,25 +49,25 @@
     </div>
 
     <div class="current-temperature">
-      21C
+      ...
     </div>
   </section>
 
   <div class="bottom-container">
     <section class="temperature-details">
       <div class="temperature-details-item">
-        <h5 class="details-item-title">Vento</h5>
-        <div class="details-item-info">25</div>
+        <div class="details-item-title">Vento</div>
+        <div class="details-item-info" id="wind-info">...</div>
       </div>
 
       <div class="temperature-details-item">
-        <h5 class="details-item-title">Umidade</h5>
-        <div class="details-item-info">...</div>
+        <div class="details-item-title">Umidade</div>
+        <div class="details-item-info" id="air-humidity-info">...</div>
       </div>
 
       <div class="temperature-details-item">
-        <h5 class="details-item-title">Sensação</h5>
-        <div class="details-item-info">...</div>
+        <div class="details-item-title">Sensação</div>
+        <div class="details-item-info" id="thermal-sensation-info">...</div>
       </div>
     </section>
 
@@ -77,17 +76,18 @@
         <svg class="sunrise-img" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-sunrise" viewBox="0 0 16 16">
           <path d="M7.646 1.146a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708L8.5 2.707V4.5a.5.5 0 0 1-1 0V2.707l-.646.647a.5.5 0 1 1-.708-.708l1.5-1.5zM2.343 4.343a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM8 7a3 3 0 0 1 2.599 4.5H5.4A3 3 0 0 1 8 7zm3.71 4.5a4 4 0 1 0-7.418 0H.499a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
         </svg>
-        <div class="sunrise-sunset-info">5:30</div>
+        <div class="sunrise-sunset-info" id="sunrise-info">...</div>
       </div>
 
       <div class="sunrise-sunset-item">
         <svg class="sunset-img" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-sunset" viewBox="0 0 16 16">
           <path d="M7.646 4.854a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V1.5a.5.5 0 0 0-1 0v1.793l-.646-.647a.5.5 0 1 0-.708.708l1.5 1.5zm-5.303-.51a.5.5 0 0 1 .707 0l1.414 1.413a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .706l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM8 7a3 3 0 0 1 2.599 4.5H5.4A3 3 0 0 1 8 7zm3.71 4.5a4 4 0 1 0-7.418 0H.499a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
         </svg>
-        <div class="sunrise-sunset-info">18:00</div>
+        <div class="sunrise-sunset-info" id="sunset-info">...</div>
       </div>
     </section>
   </div>
 
+  <script src="app.js"></script>
 </body>
 </html>
